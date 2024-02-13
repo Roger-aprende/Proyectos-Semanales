@@ -1,0 +1,105 @@
+:root{
+    --shadow-card: 3px 3px 8px 8px #ebebeb73, -3px -3px 10px #ebebeb73 ;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img/cielo-azul.gif);
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding-left:0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title{
+    max-width: 500px;
+    padding: 1rem 0 3rem 0 ;
+    color: #fff;
+    text-align: center;
+    font-family: 'lexend deca';
+}
+
+.container{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.main-one,
+.main-seconds,
+.card{
+    border: 3px solid #000000a8 ;
+    box-shadow: var(--shadow-card);
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: rgb(202, 245, 230);
+}
+
+.main-one:hover,
+.main-seconds:hover,
+.card:hover{
+    cursor: pointer;
+    border: 3px solid #000000a8;
+    box-shadow: 3px 3px 5px 5px #3857e0a6, -3px -3px 10px #00000073;
+}
+
+#block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    width: 100vw;
+    gap: 5rem 1rem;
+    
+    padding: 1rem 2rem 5rem;
+}
+
+.card{
+    border: .5px solid rgb(240, 148, 138);
+}
+
+.card__img{
+    display: block;
+}
+
+.card__blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    background-color: rgb(202, 199, 199);
+    padding: 0.1px;
+}
+
+.card__name{
+    padding-top: 1.5rem;
+    font-family: 'poppins';
+    font-weight: bold;
+}
+
+.card__gender{
+    padding-bottom: 1.5rem;
+
+    font-family: 'lexend deca';
+    font-style: oblique;
+}
