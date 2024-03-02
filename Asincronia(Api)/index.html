@@ -7,22 +7,30 @@
     <link rel="stylesheet" href="main-style.css">   
 </head>
 <body>
-    <h1 class="title">Proyecto con dilan, me esta explotando el cerebro</h1>
-    <h2 class="title">Personajes Principales</h2>
+    <h1>Proyecto con dilan, me esta explotando el cerebro</h1>
+    <h2>Persona<span class="font-color">j</span>es Principales</h2>
+
+    <section class="container"></section>
+    <h2>Persona<span class="font-color">j</span>es Secundarios</h2>
+    
+    <div id="block-tarjet"></div>
+
 
     
-    <section class="container">
-        <div class="main-one"></div>
-        <div class="main-seconds"></div>
-    </section>
 
-    
-    <h2 class="title">Personajes Secundarios</h2>
-    <div id="block"></div>
-    
+    <button id="btm-modal" class="btm">Open modal</button>
 
-
+    <dialog>
+           <img class="modal-img">
+           <div class="blocktext">
+             <p class="modal-name"></p>
+             <p class="modal-gender"></p>
+             <p class="modal-estado"></p>
+             <p class="modal-specie"></p>   
+             <button id="btm-close" class="btm">Close</button>     
+           </div>
+    </dialog>
     <!-- ///Type module, Sirve para hacer importaciones, desde otro archivo sin, tenerlo en el index -->
-    <script type="module" src="index.js" defer></script>
+    <script type="module" src="js/index.js" defer></script>
 </body>
 </html>

@@ -15,6 +15,6 @@ export const getData = async () =>{
         //results En duDa
         return objLiteral.results;
     }catch(error){
-        console.log("Esta")
+        console.log("el Servidor esta caido")
     }
 }
